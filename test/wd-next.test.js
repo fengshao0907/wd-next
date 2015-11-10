@@ -15,7 +15,7 @@
 
 var driver = require('..')();
 
-describe('test sample', function() {
+describe('github test sample', function() {
   this.timeout(300000);
 
   before(function() {
@@ -26,26 +26,31 @@ describe('test sample', function() {
     .quit();
   });
 
-  it('#0 ', function(done) {
+  it('#0 goto github repository', function(done) {
     return driver
       .init()
-      .get('https://www.baidu.com/')
-      .sleep(3000)
-      .elementByName('wd')
+      .get('https://www.baidu.com')
+      .sleep(10000)
+      .elementByJs('document.querySelectorAll(".btn.btn-sm.btn-with-count.tooltipped.tooltipped-n")[1]' )
       .getTagName()
       .then(function(text) {
-        console.log('---------' + text)
+        console.log('---------' + text);
       })
-      .sendKeys('macaca')
-      .sleep(1000)
-      .elementById('su')
-      .sleep(3000)
-      .click();
+      .end(done);
 
-      setTimeout(function() {
-        done();
-      }, 5000);
+  });
+
+  it('#1 goto github repository', function(done) {
+    return driver
+      .init()
+      .get('https://www.baidu.com')
+      .sleep(10000)
+      .elementByJs('document.querySelectorAll(".btn.btn-sm.btn-with-count.tooltipped.tooltipped-n")[1]' )
+      .getTagName()
+      .then(function(text) {
+        console.log('---------' + text);
+      })
+      .end(done);
+
   });
 });
-
-
