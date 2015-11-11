@@ -26,6 +26,12 @@ wd-next
 $ npm i wd-next --save
 ```
 
+## Test
+
+```bash
+$ make test
+```
+
 ## License
 
 The MIT License (MIT)

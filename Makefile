@@ -4,12 +4,8 @@ npm_bin= $$(npm bin)
 all: test
 install:
 	@npm install
-test: install
-	@node --harmony \
-		${npm_bin}/istanbul cover ${npm_bin}/_mocha \
-		-- \
-		--timeout 10000 \
-		--require co-mocha
+test:
+	@${npm_bin}/macaca run -d ./test --verbose
 jshint:
 	@${npm_bin}/jshint .
 .PHONY: test

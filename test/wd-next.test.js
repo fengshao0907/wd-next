@@ -30,22 +30,21 @@ describe('github test sample', function() {
     return driver
       .init()
       .get('https://www.baidu.com')
-      .sleep(10000)
-      .takeScreenshot('./test.png')
-      .elementByJs('document.querySelectorAll(".btn.btn-sm.btn-with-count.tooltipped.tooltipped-n")[1]' )
-      .getTagName()
-      .then(function(text) {
-        console.log('---------' + text);
+      .sleep(3000)
+      .getTitle()
+      .then(function(title) {
+        //title.should.containEql('百1度');
       })
+      .sleep(3000)
+      .takeScreenshot('./test.png')
       .end(done);
-
   });
 
   it('#1 goto github repository', function(done) {
     return driver
       .init()
       .get('https://www.baidu.com')
-      .sleep(10000)
+      .sleep(3000)
       .elementByJs('document.querySelectorAll(".btn.btn-sm.btn-with-count.tooltipped.tooltipped-n")[1]' )
       .getTagName()
       .then(function(text) {
