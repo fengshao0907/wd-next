@@ -36,7 +36,7 @@ describe('github test sample', function() {
         title.should.containEql('macaca');
       })
       .sleep(1000)
-      .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]/a[1]')
+      .elementByCss('.pagehead-actions li:nth-child(2) a')
       .click()
       .sleep(1000)
       .getCurrentUrl()
