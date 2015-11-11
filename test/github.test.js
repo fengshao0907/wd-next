@@ -36,7 +36,7 @@ describe('github test sample', function() {
         title.should.containEql('macaca');
       })
       .sleep(1000)
-      .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]')
+      .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]/a[1]')
       .click()
       .sleep(1000)
       .getCurrentUrl()
@@ -48,7 +48,12 @@ describe('github test sample', function() {
         }
       })
       .sleep('20000')
-      .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]')
+      .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]/div/form[2]/button')
+      .getInnerHtml()
+      .then(function(text) {
+        text.should.containEql('Star');
+      })
+      .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]/div/form[2]/button')
       .click()
       .sleep(6000)
       .takeScreenshot('./test.png')
