@@ -15,7 +15,7 @@
 
 var driver = require('..')();
 
-describe('github test sample', function() {
+describe('test sample', function() {
   this.timeout(300000);
 
   before(function() {
@@ -33,6 +33,7 @@ describe('github test sample', function() {
       .sleep(3000)
       .getTitle()
       .then(function(title) {
+        console.log(title);
         //title.should.containEql('百1度');
       })
       .sleep(3000)
