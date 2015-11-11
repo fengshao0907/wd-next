@@ -33,8 +33,7 @@ describe('test sample', function() {
       .sleep(3000)
       .getTitle()
       .then(function(title) {
-        console.log(title);
-        //title.should.containEql('百1度');
+        title.should.containEql('百度');
       })
       .sleep(3000)
       .takeScreenshot('./test.png')
