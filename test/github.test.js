@@ -42,16 +42,17 @@ describe('github test sample', function() {
       .getCurrentUrl()
       .then(function(url) {
         if (!!~url.indexOf('/login?')) {
-          driver
-            .executeScript('alert("Please login in 20s!")')
-            .sleep('20000')
-            .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]')
-            .click()
-            .sleep(1000)
-            .takeScreenshot('./test.png')
-            .end(done);
+          return driver
+            .init()
+            .executeScript('alert("Please login in 20s!")');
         }
-      });
+      })
+      .sleep('20000')
+      .elementByXpath('/html/body/div[4]/div/div[1]/div/div/ul/li[2]')
+      .click()
+      .sleep(6000)
+      .takeScreenshot('./test.png')
+      .end(done);
   });
 });
 
