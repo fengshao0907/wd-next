@@ -31,6 +31,7 @@ describe('github test sample', function() {
       .init()
       .get('https://www.baidu.com')
       .sleep(10000)
+      .takeScreenshot('./test.png')
       .elementByJs('document.querySelectorAll(".btn.btn-sm.btn-with-count.tooltipped.tooltipped-n")[1]' )
       .getTagName()
       .then(function(text) {
