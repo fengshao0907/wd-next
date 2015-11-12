@@ -13,7 +13,8 @@
 
 'use strict';
 
-var driver = require('..')();
+var wd = require('..');
+var driver = wd.initPromiseChain();
 
 describe('github test sample', function() {
   this.timeout(300000);
