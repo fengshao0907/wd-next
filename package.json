@@ -8,7 +8,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/wd-next.git"
+    "url": "git://github.com/macacajs/wd-next.git"
   },
   "dependencies": {
     "macaca-chromedriver": "~0.1.0",
@@ -28,9 +28,7 @@
   "pre-commit": [
     "jshint"
   ],
-  "homepage": "https://github.com/xudafeng/wd-next",
-  "author": "xudafeng",
-  "email": "xudafeng@126.com",
+  "homepage": "https://github.com/macacajs/wd-next",
   "blog": "http://xdf.me",
   "license": "MIT"
 }
