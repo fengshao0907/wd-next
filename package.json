@@ -17,8 +17,11 @@
     "selenium-webdriver": "~2.48.2"
   },
   "devDependencies": {
-    "istanbul": "*",
+    "co-mocha": "*",
+    "mocha": "*",
+    "should": "*",
     "jshint": "*",
+    "istanbul": "*",
     "pre-commit": "1.1.1"
   },
   "scripts": {
