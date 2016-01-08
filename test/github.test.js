@@ -23,10 +23,15 @@ describe('github test sample', function() {
   });
 
   after(function() {
-    return driver
-    .quit();
+    //return driver
+    //.quit();
   });
 
+  it('should be ok', function() {
+    wd.should.be.ok;
+    driver.should.be.ok;
+  });
+/*
   it('#0 goto github repository', function(done) {
     return driver
       .init()
@@ -60,5 +65,6 @@ describe('github test sample', function() {
       .takeScreenshot('./test.png')
       .end(done);
   });
+*/
 });
 
