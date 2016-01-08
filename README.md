@@ -11,7 +11,7 @@
 [travis-image]: https://img.shields.io/travis/macacajs/wd-next.svg?style=flat-square
 [travis-url]: https://travis-ci.org/macacajs/wd-next
 [coveralls-image]: https://img.shields.io/coveralls/macacajs/wd-next.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/macacajs/macaca-wd-next?branch=master
+[coveralls-url]: https://coveralls.io/r/macacajs/wd-next?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/wd-next.svg?style=flat-square
