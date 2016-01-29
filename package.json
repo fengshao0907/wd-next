@@ -1,6 +1,6 @@
 {
   "name": "wd-next",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "Node.js wrapper for the webdriver client.",
   "keywords": [
     "webdriver"
