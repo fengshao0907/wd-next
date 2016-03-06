@@ -1,6 +1,6 @@
 {
   "name": "wd-next",
-  "version": "0.1.17",
+  "version": "1.0.0",
   "description": "Node.js wrapper for the webdriver client.",
   "keywords": [
     "webdriver"
@@ -11,7 +11,7 @@
     "url": "git://github.com/macacajs/wd-next.git"
   },
   "dependencies": {
-    "macaca-chromedriver": "~0.1.0",
+    "macaca-chromedriver": "~1.0.3",
     "q": "~1.4.1",
     "selenium-webdriver": "~2.48.2"
   },
